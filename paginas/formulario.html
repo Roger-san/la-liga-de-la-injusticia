@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      header {
+        background-image: url("../img/banner.jpg");
+        background-position: center;
+        background-size: cover;
+      }
+      header h1 {
+        padding: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="card-header bg-dark text-white">
+      <h1>Practica HTML - HÉROES</h1>
+    </header>
+
+    <nav navbar navbar-expand-sm  navbar-light bg-light>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm  navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link" href="../paginas/listado.html">Listado de heroes</a>
+                <a class="nav-link" href="#">Crear un heroe</a>
+                <a class="nav-link">Cerrar Sesión</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <section>
+      <h3>Formulario para crear un héroe</h3>
+
+      <form action="">
+        <input type="text" name="nombre" id="nombre" placeholder="nombre" maxlength="20" size="20" />
+        <input type="text" name="poder" id="poder" placeholder="poder" maxlength="40" size="5" />
+        <br />
+        <br />
+        <label>Habilidades:</label><br />
+        <label for="vuela"><input type="checkbox" name="vuela" id="vuela" />Vuela</label><br />
+        <label for="superfuerza"><input type="checkbox" name="superfuerza" id="superfuerza" />Superfuerza</label><br />
+        <label for="radioactivo"><input type="checkbox" name="radioactivo" id="radioactivo" />Radioactivo</label><br />
+        <label for="tienedinero"><input type="checkbox" name="tienedinero" id="tienedinero" />Tiene dinero</label><br />
+        <label for="otras"><input type="checkbox" name="otras" id="otras" />Otras</label>
+      </form>
+      <br /><br />
+
+      <label for="origen">Origen:</label><br />
+      <label for="extraterrestre"><input type="radio" name="origen" id="extraterrestre" />Extraterrestre</label><br />
+      <label for="mutante"><input type="radio" name="origen" id="mutante" />Mutante</label><br />
+      <label for="experimentofallido"
+        ><input type="radio" name="origen" id="experimentofallido" />Experimento fallido</label
+      ><br />
+      <label for="lepicounbicho"><input type="radio" name="origen" id="lepicounbicho" />Le pico un bicho</label><br />
+    </section>
+
+    <hr />
+
+    <input type="reset" value="Restablecer" />
+    <input type="submit" value="Crear" />
+
+    <footer class="card-footer bg-dark text-white fixed-bottom"><p>Copyrigth (c) 2020 - Salvador</p></footer>
+  </body>
+</html>
